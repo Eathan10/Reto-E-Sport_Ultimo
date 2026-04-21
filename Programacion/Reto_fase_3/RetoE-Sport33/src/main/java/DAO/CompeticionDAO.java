@@ -17,9 +17,14 @@ public class CompeticionDAO {
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setInt(1, competicion.getCodComp());
             ps.setString(2, competicion.getNombre());
-            ps.setString(3, competicion.getEstado().toLowerCase());
+            ps.setString(3, competicion.getEstado());
             ps.setDouble(4, competicion.getPremio());
             ps.executeUpdate();
+        }catch (SQLException e){
+            if (e.getErrorCode() >= 20000 && e.getErrorCode() <= 20999) {
+                throw new SQLException(e.getMessage(), e.getSQLState(), e.getErrorCode());
+            }
+            throw e;
         }
     }
 
