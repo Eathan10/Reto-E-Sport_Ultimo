@@ -30,7 +30,20 @@ public class UsuarioView{
 
     @FXML
     void onVerJugadores(ActionEvent event) {
-        cambiarVentana("/com/example/retoesport33/verJugadores.fxml", "Lista de Jugadores");
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/retoesport33/verJugadores.fxml"));
+            Parent root = loader.load();
+
+            Stage stage = (Stage) btnVerJugadores.getScene().getWindow();
+
+            stage.setScene(new Scene(root));
+            stage.setTitle("Jugadores");
+            stage.show();
+
+        } catch (IOException e) {
+
+            mostrarAlerta("Error al cargar la ventana", "No se pudo abrir la ventana de Menu del administrador.");
+        }
     }
 
     @FXML

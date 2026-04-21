@@ -29,77 +29,52 @@ public class EquipoView {
 
     @FXML
     void onActualizar(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/org/example/RetoE-Sport33/ModificarEquipo-view.fxml"));
-        Parent root = fxmlLoader.load();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/retoesport33/ModificarEquipo-view.fxml"));
+        Parent root = loader.load();
 
-        Scene scene = new Scene(root);
-        Stage stage = new Stage();
-        stage.setTitle("Ventana dos");
-        stage.setScene(scene);
+        Stage stage = (Stage) btnModificar.getScene().getWindow();
 
-        ModificarEquipoView controllerModificarEquipo = fxmlLoader.getController();
-
-        controllerModificarEquipo.init(stage,this);
-
+        stage.setScene(new Scene(root));
+        stage.setTitle("Modificar Equipo");
         stage.show();
-        this.stage.close();
+
 
     }
 
 
     @FXML
     void onCrear(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/org/example/RetoE-Sport33/AltaEquipo-view.fxml"));
-        Parent root = fxmlLoader.load();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/retoesport33/AltaEquipo-view.fxml"));
+        Parent root = loader.load();
 
-        Scene scene = new Scene(root);
-        Stage stage = new Stage();
-        stage.setTitle("Ventana dos");
-        stage.setScene(scene);
+        Stage stage = (Stage) btnAlta.getScene().getWindow();
 
-        AltaEquipoView controllerAltaEquipo= fxmlLoader.getController();
-
-        controllerAltaEquipo.init(stage,this);
-
+        stage.setScene(new Scene(root));
+        stage.setTitle("Crear Equipo");
         stage.show();
-        this.stage.close();
 
     }
 
     @FXML
     void onEliminar(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/org/example/RetoE-Sport33/BajaEquipo-view.fxml"));
-        Parent root = fxmlLoader.load();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/retoesport33/BajaEquipo-view.fxml"));
+        Parent root = loader.load();
 
-        Scene scene = new Scene(root);
-        Stage stage = new Stage();
-        stage.setTitle("Ventana dos");
-        stage.setScene(scene);
+        Stage stage = (Stage) btnBaja.getScene().getWindow();
 
-
-        BajaEquipoView controllerBajaEquipo= fxmlLoader.getController();
-
-        controllerBajaEquipo.init(stage,this);
-
+        stage.setScene(new Scene(root));
+        stage.setTitle("Eliminar Equipo");
         stage.show();
-        this.stage.close();
+
 
 
 
     }
 
-    private Stage stage;
-
-    public void setStage(Stage stage) {
-        // Establece la ventana actual
-        this.stage = stage;
-    }
 
 
-    public void show() {
-        // Muestra la ventana
-        if (stage != null) stage.show();
-    }
+
+
 
     @FXML
     void onSalir(ActionEvent event) {
@@ -107,8 +82,8 @@ public class EquipoView {
     }
 
     @FXML
-    void onVolver(ActionEvent event) {
-        try {
+    void onVolver(ActionEvent event) throws IOException {
+
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/retoesport33/menuAdministrador-view.fxml"));
             Parent root = loader.load();
 
@@ -118,19 +93,9 @@ public class EquipoView {
             stage.setTitle("Menú de Usuario");
             stage.show();
 
-        } catch (IOException e) {
-            mostrarAlerta("Error de Navegación", "No se pudo cargar la ventana de usuario.");
-            e.printStackTrace();
-        }
     }
 
-    private void mostrarAlerta(String titulo, String mensaje) {
-        Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setTitle(titulo);
-        alert.setHeaderText(null);
-        alert.setContentText(mensaje);
-        alert.showAndWait();
-    }
+
 
 
 }

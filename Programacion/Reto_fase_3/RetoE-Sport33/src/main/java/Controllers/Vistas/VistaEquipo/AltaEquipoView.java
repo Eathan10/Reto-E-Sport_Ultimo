@@ -4,9 +4,13 @@ import Controllers.EquipoController;
 import Modelo.Jugador;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -65,9 +69,16 @@ public class AltaEquipoView {
 
 
     @FXML
-    void onVolver(ActionEvent event) {
-        equipoView.show();
-        stage.close();
+    void onVolver(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/retoesport33/Equipo-view.fxml"));
+        Parent root = loader.load();
+
+        Stage stage = (Stage) btnSalir.getScene().getWindow();
+
+        stage.setScene(new Scene(root));
+        stage.setTitle("Menú de Equipos");
+        stage.show();
+
     }
 
     private Stage stage;

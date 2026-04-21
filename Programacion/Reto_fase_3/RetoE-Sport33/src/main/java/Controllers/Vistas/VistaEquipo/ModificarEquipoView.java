@@ -114,9 +114,16 @@ public class ModificarEquipoView {
 
 
     @FXML
-    void onVolver(ActionEvent event) {
-        equipoView.show();
-        stage.close();
+    void onVolver(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/retoesport33/Equipo-view.fxml"));
+        Parent root = loader.load();
+
+        Stage stage = (Stage) btnCancelar.getScene().getWindow();
+
+        stage.setScene(new Scene(root));
+        stage.setTitle("Menu de Equipos");
+        stage.show();
+
     }
 
     private EquipoView equipoView;

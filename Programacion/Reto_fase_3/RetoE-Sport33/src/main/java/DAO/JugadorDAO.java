@@ -264,30 +264,21 @@ public class JugadorDAO {
 
     public List<Equipo> obtenerEquiposDisp() throws SQLException {
 
-        String sql = "SELECT cod_equipo, nombre FROM equipos";
-
+        String sql = "SELECT cod_equipo, nombre FROM EQUIPOS";
         List<Equipo> listaEquipos = new ArrayList<>();
 
-        try (
+        if (conn == null) return listaEquipos;
 
-                PreparedStatement ps = conn.prepareStatement(sql);
-
-                ResultSet rs = ps.executeQuery()) {
+        try (PreparedStatement ps = conn.prepareStatement(sql);
+             ResultSet rs = ps.executeQuery()) {
 
             while (rs.next()) {
-
                 Equipo equipo = new Equipo();
-
                 equipo.setCodigoEquipo(String.valueOf(rs.getInt("cod_equipo")));
-
                 equipo.setNombreEquipo(rs.getString("nombre"));
-
                 listaEquipos.add(equipo);
-
             }
-
         }
-
         return listaEquipos;
 
     }

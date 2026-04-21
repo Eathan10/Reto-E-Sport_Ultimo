@@ -43,10 +43,11 @@ public class PartidoController {
     @FXML
     void onVolver(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/retoesport33/menuAdmistradorView.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/retoesport33/menuAdministrador-view.fxml"));
             Parent root = loader.load();
 
             Stage stage = (Stage) btnVolver.getScene().getWindow();
+
 
             stage.setScene(new Scene(root));
             stage.setTitle("Menu Amdinistrador");
@@ -72,12 +73,29 @@ public class PartidoController {
 
     @FXML
     public void initialize() {
-        Jornada ultima = Controllers.JornadaController.obtenerUltimaJornada();
-        if (ultima != null) {
-            lbfecha.setText(ultima.getFecha_inicio().toString());
-            lbhora.setText("Jornada " + ultima.getNumJornada());
+        try {
+            Jornada ultima = null;
+            try {
+                ultima = Controllers.JornadaController.obtenerUltimaJornada();
+            } catch (Exception e) {
+                System.err.println("Error al obtener jornada: " + e.getMessage());
+            }
+
+            if (ultima != null && lbfecha != null && lbhora != null) {
+                lbfecha.setText(ultima.getFecha_inicio().toString());
+                lbhora.setText("Jornada " + ultima.getNumJornada());
+            }
+
+
+            try {
+                generarEnfrentamientosAutomaticos();
+            } catch (Exception e) {
+                System.err.println("Error en IA/Enfrentamientos: " + e.getMessage());
+            }
+
+        } catch (Exception e) {
+            System.err.println("Fallo general en initialize: " + e.getMessage());
         }
-        generarEnfrentamientosAutomaticos();
     }
 
     private void generarEnfrentamientosAutomaticos() {
