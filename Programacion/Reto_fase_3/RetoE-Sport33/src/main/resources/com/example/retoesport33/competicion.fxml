@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="300.0" prefWidth="400.0" spacing="12" style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Competicion.CompeticionVistaController">
+<VBox prefHeight="300.0" prefWidth="400.0" spacing="12" style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Vistas.Competicion.CompeticionGestionController">
 
     <Label alignment="CENTER" prefHeight="22.0" prefWidth="377.0" style="-fx-font-size: 15; -fx-font-weight: bold;" text="COMPETICIÓN">
       <font>

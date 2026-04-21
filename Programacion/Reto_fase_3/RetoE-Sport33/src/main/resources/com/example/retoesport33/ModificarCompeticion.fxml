@@ -10,17 +10,16 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="500.0" prefWidth="550.0" spacing="20" style="-fx-padding: 35; -fx-background-color: #F4F9F4;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Competicion.MoCompeticionController">
+
+<AnchorPane prefHeight="350.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Vistas.Competicion.MoCompeticionController">
+
     <children>
         <Label alignment="CENTER" prefWidth="480.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: #1B5E20;" text="MODIFICAR COMPETICIÓN" />
 
-        <HBox alignment="CENTER_LEFT" spacing="15" style="-fx-background-color: #E8F5E9; -fx-padding: 15; -fx-background-radius: 10;">
-            <children>
-                <Label style="-fx-font-weight: bold;" text="Código:" />
-                <TextField fx:id="tfCodigo" promptText="Buscar..." style="-fx-background-radius: 5;" />
-                <Button fx:id="BtnBuscar" onAction="#onBuscar" style="-fx-background-color: #1B5E20; -fx-text-fill: white; -fx-background-radius: 5; -fx-cursor: hand;" text="Buscar" />
-            </children>
-        </HBox>
+
+        <Label layoutX="19.0" layoutY="65.0" text="Codigo Competición a modificar:" />
+        <TextField fx:id="tfCodigo" layoutX="204.0" layoutY="60.0" prefHeight="26.0" prefWidth="70.0" />
+
 
         <GridPane hgap="15" style="-fx-padding: 10;" vgap="15">
             <columnConstraints>
@@ -51,4 +50,6 @@
             </children>
         </HBox>
     </children>
-</VBox>
+
+</AnchorPane>
+
