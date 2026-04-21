@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="320.0" prefWidth="500.0" spacing="25" style="-fx-padding: 40; -fx-background-color: #F4F9F4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.VistaEquipo.BajaEquipoView">
+<VBox alignment="CENTER" prefHeight="320.0" prefWidth="500.0" spacing="25" style="-fx-padding: 40; -fx-background-color: #F4F9F4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Vistas.VistaEquipo.BajaEquipoView">
     <children>
         <Label style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: #1B5E20;" text="BAJA DE EQUIPO" />
 
