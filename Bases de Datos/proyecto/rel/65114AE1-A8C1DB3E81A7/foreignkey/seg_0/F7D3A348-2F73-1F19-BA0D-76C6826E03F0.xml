@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F7D3A348-2F73-1F19-BA0D-76C6826E03F0" containerWithKeyObject="3E2F1C2E-AD17-74E6-A840-30F3B2E6C52E" localFKIndex="4B022565-A2B2-451E-BC90-FE8AAE511053" name="resul_cod_partido_fk">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:01 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>265BDFCB-454D-21D0-133D-E032C3F93435</importedID>
+<referredTableLongName>partidos</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4E6204B2-2D7B-63FE-D641-6BDE85686162</referredTableID>
+<keyObject>47BAE0B9-A214-ADC9-5851-0D0467ABBA27</keyObject>
+<referredKeyID>47BAE0B9-A214-ADC9-5851-0D0467ABBA27</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_partido</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

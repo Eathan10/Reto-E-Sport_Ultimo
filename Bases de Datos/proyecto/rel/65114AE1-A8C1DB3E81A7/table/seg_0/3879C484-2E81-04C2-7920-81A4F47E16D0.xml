@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3879C484-2E81-04C2-7920-81A4F47E16D0" name="equipos">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C1119D2A-ED2D-979C-ADE2-7B8AE2BFAE0B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_equipo" id="5E61834F-2A5E-33D5-6525-09901E106EA6">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>5663BF42-A87E-CD56-D6EA-8D60F9C275B0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B3992E0A-3798-300D-FB1B-3C5B5B13AC0C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="7E6D66DD-5972-DC82-59E8-FE8D0548C629">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>03A1A011-46BF-2F1B-18D0-89DF01837204</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>23DBE85C-086C-C5B8-D9A9-DA2EC2D28648</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_fundacion" id="40A8E48A-0797-8C18-CEFC-DE0AFD30ECBC">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A00C9E27-3891-BD40-4918-2BCE4D01E214</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>3BD21728-6036-6A7D-DAD7-6768C01F4C22</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F285B600-BEDE-7EAD-E420-20EECC67C9AC" name="equi_cod_pk">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>CB984436-BB50-FC56-2B64-3246574B301B</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E61834F-2A5E-33D5-6525-09901E106EA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="jornadas" directorySegmentName="seg_0" id="CEDE83C2-2EAB-1AF9-304D-EAE02CC43D6B">
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="num_jornada" id="0C16EE1F-49D5-85F8-F449-F4E29FF07DEF">
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cod_comp" id="129B8DC5-FB1F-78D7-DF61-36F0F8EF5D33">
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="fecha_inicio" id="50574394-6BBA-AFF8-6465-882A7603D8DF">
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="jor_cod_comp_fk" id="B7555684-B76E-405B-DDE4-A93FFDB84FCB">
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:01 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="jor_num_pk" id="116F8DA4-7A81-EF84-1846-255385CCE859">
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

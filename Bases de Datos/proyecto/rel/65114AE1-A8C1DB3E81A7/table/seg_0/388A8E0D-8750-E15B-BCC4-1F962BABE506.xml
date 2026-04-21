@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="388A8E0D-8750-E15B-BCC4-1F962BABE506" name="competiciones">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>D216CC32-5B31-52FA-1522-4F69A1FAD991</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_comp" id="8BA6667B-A090-4689-2613-C83D62758059">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>FF58AA66-C201-A883-7F23-F1F4ED9174E0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B3992E0A-3798-300D-FB1B-3C5B5B13AC0C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="D9984E2B-9A59-473F-8142-9712061D62A9">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>431ADC87-5035-D628-3466-B37CC494AC79</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>23DBE85C-086C-C5B8-D9A9-DA2EC2D28648</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="3DB9A874-0E9B-2517-DD3D-F658DFC909D2">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>BB08579B-A86C-B3DC-4CD8-E39AAF9F565F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7C409FB0-F416-8F05-D09B-E76D753D5248</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="premio" id="F8AD31B1-9E19-048B-5347-346BC83A8D8D">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C15613C2-A626-2A60-6843-E6643F315CEB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B3992E0A-3798-300D-FB1B-3C5B5B13AC0C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="26A64B77-1584-1794-753B-EAC49D436BB6" name="comp_cod_pk">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>8373C022-E77C-719E-8047-599B0DC1B663</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8BA6667B-A090-4689-2613-C83D62758059"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="comp_estado_ck" directorySegmentName="seg_0" id="C2054799-826B-12EC-4DDF-CB018E97B632">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>6B2F6947-C019-8850-B917-81060E616086</importedID>
+<rule><![CDATA[estado in ('abierto','cerrado')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

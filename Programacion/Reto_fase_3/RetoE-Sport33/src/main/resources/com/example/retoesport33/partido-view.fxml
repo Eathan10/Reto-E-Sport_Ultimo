@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane  fx:controller="Controllers.Vistas.VistaJornada.PartidoController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="210.0" layoutY="180.0" text="FECHA:" />
+      <Label layoutX="212.0" layoutY="216.0" text="HORA:" />
+      <Label fx:id="lbhora" layoutX="278.0" layoutY="216.0" text="sin_datos" />
+      <Label fx:id="lbfecha" layoutX="278.0" layoutY="180.0" text="sin_datos" />
+      <Label layoutX="142.0" layoutY="301.0" text="PREDICCIÓN DE LA IA:" />
+      <Label fx:id="lbprediccion" layoutX="300.0" layoutY="301.0" text="sin_datos" />
+      <Label layoutX="92.0" layoutY="44.0" prefHeight="26.0" prefWidth="44.0" text="LOCAL:" />
+      <Label layoutX="439.0" layoutY="47.0" text="VISITANTE:" />
+      <Label fx:id="lblocal" layoutX="71.0" layoutY="108.0" text="equipo_sin_datos" />
+      <Label fx:id="lbvisitante" layoutX="420.0" layoutY="108.0" text="equipo_sin_datos" />
+      <Button fx:id="btnVolver" layoutX="252.0" layoutY="349.0" mnemonicParsing="false" onAction="#onVolver" text="Volver" />
+   </children>
+</AnchorPane>

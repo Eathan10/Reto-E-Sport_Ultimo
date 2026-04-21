@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="Script_Objetos_Domains">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_55" id="23DBE85C-086C-C5B8-D9A9-DA2EC2D28648">
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>55</dataTypeSize>
+<fileName>Script_Objetos_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="3BD21728-6036-6A7D-DAD7-6768C01F4C22">
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>Script_Objetos_Domains</fileName>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_20" id="4E6B1551-79A7-2085-9A05-A5705C15F5DC">
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+<fileName>Script_Objetos_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_7" id="7C409FB0-F416-8F05-D09B-E76D753D5248">
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>7</dataTypeSize>
+<fileName>Script_Objetos_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_0_0_0" id="B3992E0A-3798-300D-FB1B-3C5B5B13AC0C">
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>Script_Objetos_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Timestamp_6_0_0" id="BF52DC6F-38ED-5684-8DF0-D4A0564F44FF">
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>6</dataTypePrecision>
+<fileName>Script_Objetos_Domains</fileName>
+<logicalDatatype>LOGDT015</logicalDatatype>
+</Domain>
+</domains>
+</DomainFile>

@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14300F60-17CD-2D83-C5B5-6C9CA26F1EE6" name="perfiles">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>AA9B392B-E672-45E8-90D1-CDC40D787BD9</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_perfil" id="718FCEF7-4E77-582A-04A8-7E4ED64FF21D">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A16A64EF-7E18-4B2F-A9F8-5FA2941158B1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B3992E0A-3798-300D-FB1B-3C5B5B13AC0C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="7706A23C-F811-859E-70C0-F4D90A0BA344">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F51F25F6-29F8-3D0D-9C11-3D25DA49678E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>23DBE85C-086C-C5B8-D9A9-DA2EC2D28648</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="E2A38DA9-F09E-5DEE-A4F3-B01C6AB5C9AB">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>779C6203-46AD-BF98-778B-CB78528B3DDE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>23DBE85C-086C-C5B8-D9A9-DA2EC2D28648</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="1FC02AE1-71DF-2636-9406-64EB27FDBA49">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>1E7EFFD0-F1C3-93E3-B1D5-622338522F16</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>23DBE85C-086C-C5B8-D9A9-DA2EC2D28648</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73255F48-F987-FCF4-0E62-E86000CE6641" name="per_cod_pk">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>13B60A16-75BE-FB2D-6B70-A5CA97FE597F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="718FCEF7-4E77-582A-04A8-7E4ED64FF21D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06A90ECE-AE4F-5858-3EBC-3B8E50CF744B" name="per_nombre_uq">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>672396B3-C78C-7502-CB11-5C40E4BB1E51</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7706A23C-F811-859E-70C0-F4D90A0BA344"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="per_tipo_ck" directorySegmentName="seg_0" id="EF31BDDF-CCF5-CE98-1E81-087E2E469270">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>2EDE8EA5-2EBE-D7DD-D0EB-CDF79DA6E59F</importedID>
+<rule><![CDATA[tipo in ('usuario','administrador')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

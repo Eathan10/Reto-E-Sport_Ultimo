@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E6204B2-2D7B-63FE-D641-6BDE85686162" name="partidos">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C4141A2B-4500-0F33-05B5-4CAFFFC9E3B6</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_partido" id="B1AFFA67-5459-4FC9-3CA2-537884796EF2">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>27627DCD-9A02-C22F-6437-DD314F708581</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B3992E0A-3798-300D-FB1B-3C5B5B13AC0C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="num_jornada" id="E7763364-01C8-4E8C-7739-C5E929CE89C0">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C315E8C4-D6FB-216F-E62A-5AEDA24FAFE3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B3992E0A-3798-300D-FB1B-3C5B5B13AC0C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="758DDD9F-862D-FBB9-083D-929E64C4CC55" referredColumn="0C16EE1F-49D5-85F8-F449-F4E29FF07DEF"/>
+</associations>
+</Column>
+<Column name="hora" id="BCB21A9B-B911-9AA7-8BE6-BE99D0087901">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>CF618C63-380C-CBA0-0D51-E9BD630394FD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>BF52DC6F-38ED-5684-8DF0-D4A0564F44FF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47BAE0B9-A214-ADC9-5851-0D0467ABBA27" name="part_cod_pk">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>01943FC4-61E4-A31A-4830-E1FECBD6C1B9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1AFFA67-5459-4FC9-3CA2-537884796EF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45687558-A363-BBFA-3E02-50870EC3C034" name="part_num_jorn_fk">
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:01 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7763364-01C8-4E8C-7739-C5E929CE89C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

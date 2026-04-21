@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B507B5C8-08DC-E724-0AE1-184ACBC4C57F" containerWithKeyObject="3E2F1C2E-AD17-74E6-A840-30F3B2E6C52E" localFKIndex="9767E12B-63C2-313B-D3CD-C8C824C2653A" name="resul_cod_equipo_fk">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:01 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>398BC700-C82B-9E21-173C-D0DD84FD789E</importedID>
+<referredTableLongName>equipos</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3879C484-2E81-04C2-7920-81A4F47E16D0</referredTableID>
+<keyObject>F285B600-BEDE-7EAD-E420-20EECC67C9AC</keyObject>
+<referredKeyID>F285B600-BEDE-7EAD-E420-20EECC67C9AC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_equipo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

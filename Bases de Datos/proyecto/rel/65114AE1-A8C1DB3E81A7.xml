@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Script_Objetos" id="65114AE1-6702-4FF1-2C39-A8C1DB3E81A7" mainViewID="7D1A4D0F-0892-A19C-8E85-ECA28FF73068">
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:49:56 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>3FD120B5-9F4E-6278-D5E2-746D192C8319</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>Script_Objetos.sql</fileName>
+<pathName>C:\Users\141ga08\Desktop\Reto Fase 3\Bases de Datos</pathName>
+<dbType>11</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

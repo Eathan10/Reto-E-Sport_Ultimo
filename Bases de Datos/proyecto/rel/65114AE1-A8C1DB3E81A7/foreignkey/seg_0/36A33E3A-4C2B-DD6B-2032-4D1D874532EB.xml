@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="36A33E3A-4C2B-DD6B-2032-4D1D874532EB" containerWithKeyObject="CEDE83C2-2EAB-1AF9-304D-EAE02CC43D6B" localFKIndex="B7555684-B76E-405B-DDE4-A93FFDB84FCB" name="jor_cod_comp_fk">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:01 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>DBC6C86A-E414-9488-272C-4BBA1F6719EF</importedID>
+<referredTableLongName>competiciones</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>388A8E0D-8750-E15B-BCC4-1F962BABE506</referredTableID>
+<keyObject>26A64B77-1584-1794-753B-EAC49D436BB6</keyObject>
+<referredKeyID>26A64B77-1584-1794-753B-EAC49D436BB6</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>cod_comp</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

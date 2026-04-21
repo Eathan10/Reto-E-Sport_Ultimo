@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="355.0" prefWidth="471.0" spacing="30.0" style="-fx-background-color: #F4F9F4; -fx-padding: 40;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.VistaAdministradorUsuario.AdministradorController">
+   <children>
+      <VBox alignment="CENTER" spacing="10">
+         <children>
+            <Label style="-fx-text-fill: #1B5E20; -fx-font-weight: bold;" text="ACCESO ADMINISTRADOR">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label style="-fx-text-fill: #7F8C8D;" />
+         </children>
+      </VBox>
+
+      <VBox maxWidth="300.0" spacing="15.0">
+         <children>
+            <VBox spacing="5">
+               <children>
+                  <Label style="-fx-font-weight: bold; -fx-text-fill: #2c3e50;" text="Nombre de usuario" />
+                  <TextField fx:id="tfNombre" prefHeight="35.0" style="-fx-background-radius: 5; -fx-border-color: #2ECC71; -fx-border-radius: 5;" />
+               </children>
+            </VBox>
+            <VBox spacing="5">
+               <children>
+                  <Label style="-fx-font-weight: bold; -fx-text-fill: #2c3e50;" text="Contraseña" />
+                  <PasswordField fx:id="tfPassword" prefHeight="35.0" style="-fx-background-radius: 5; -fx-border-color: #2ECC71; -fx-border-radius: 5;" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+
+      <HBox alignment="CENTER" spacing="20.0">
+         <children>
+            <Button fx:id="btnEntrar" mnemonicParsing="false" onAction="#onClickEntrar" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: #2ECC71; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 25; -fx-cursor: hand;" text="ENTRAR" />
+            <Button mnemonicParsing="false" onAction="#onVolver" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: #95A5A6; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 25; -fx-cursor: hand;" text="VOLVER" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

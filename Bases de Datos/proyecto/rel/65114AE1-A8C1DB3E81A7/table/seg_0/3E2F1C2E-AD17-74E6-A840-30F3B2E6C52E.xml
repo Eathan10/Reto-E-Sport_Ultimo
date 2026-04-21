@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E2F1C2E-AD17-74E6-A840-30F3B2E6C52E" name="resultados">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>645A5C7E-709A-E2BF-FCBE-08144DFA57F5</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_partido" id="A4A443E8-5124-BAB1-9F3E-E194A003DB78">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>680DFB6D-0453-F98D-17FC-97C0A39666E0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B3992E0A-3798-300D-FB1B-3C5B5B13AC0C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7D3A348-2F73-1F19-BA0D-76C6826E03F0" referredColumn="B1AFFA67-5459-4FC9-3CA2-537884796EF2"/>
+</associations>
+</Column>
+<Column name="cod_equipo" id="208AE83D-8DCE-BA06-2A87-3B773AE6239C">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>D66ABB90-CD84-E690-08FC-6F95F67D86E1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B3992E0A-3798-300D-FB1B-3C5B5B13AC0C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B507B5C8-08DC-E724-0AE1-184ACBC4C57F" referredColumn="5E61834F-2A5E-33D5-6525-09901E106EA6"/>
+</associations>
+</Column>
+<Column name="resultado" id="D16E38F2-35E6-90F9-9F44-7581A63C86D5">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>0681D5C2-0BB9-2787-E819-6C6E1FEBD2BF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B3992E0A-3798-300D-FB1B-3C5B5B13AC0C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="663A9CBB-9E88-740E-1E85-753F3D75FD20" name="resul_cod_partido_cod_equipo_pk">
+<sourceDDLFile>Script_Objetos.sql</sourceDDLFile>
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:00 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>1ACCCF24-F457-BD4D-EEC7-17AD447FF429</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4A443E8-5124-BAB1-9F3E-E194A003DB78"/>
+<colUsage columnID="208AE83D-8DCE-BA06-2A87-3B773AE6239C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9767E12B-63C2-313B-D3CD-C8C824C2653A" name="resul_cod_equipo_fk">
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:01 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="208AE83D-8DCE-BA06-2A87-3B773AE6239C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B022565-A2B2-451E-BC90-FE8AAE511053" name="resul_cod_partido_fk">
+<createdBy>141ga08</createdBy>
+<createdTime>2026-04-15 09:50:01 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4A443E8-5124-BAB1-9F3E-E194A003DB78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

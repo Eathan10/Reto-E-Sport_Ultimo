@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="63f37a95-dde3-4e08-9ba5-25521c47a11c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Competicion/CompeticionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Competicion/CompeticionVistaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Competicion/MoCompeticionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Competicion/MoCompeticionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Jugador/AltaJugadorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Jugador/AltaJugadorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Jugador/BajaJugadorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Jugador/BajaJugadorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Jugador/JugadorGestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Jugador/JugadorGestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Jugador/JugadorVistaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Jugador/ModificarJugadorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Jugador/ModificarJugadorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaVer/verJugadoresView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaVer/verJugadoresView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/verJugadpresController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/verJugadpresController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/JornadaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/JornadaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/JugadorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/JugadorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Jugador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilidades/BaseDatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilidades/BaseDatos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/retoesport33/AltaCompeticion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/retoesport33/AltaCompeticion.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/retoesport33/administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/retoesport33/administrador.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/141ga08/Desktop/Copia importante/Eathan10-Eathan10-Reto-E-Sport-2026/Programacion/Reto_fase_3/RetoE-Sport33" value="3CemnaK5ZFnC1AXHNvFalraeFoX" />
+    </persistenceIdMap>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="3CemnaK5ZFnC1AXHNvFalraeFoX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MainApplication.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/141ga08/Desktop/Copia importante/Eathan10-Eathan10-Reto-E-Sport-2026/Programacion/Reto_fase_3/RetoE-Sport33",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="63f37a95-dde3-4e08-9ba5-25521c47a11c" name="Changes" comment="" />
+      <created>1776754579134</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776754579134</updated>
+      <workItem from="1776754581033" duration="15000" />
+      <workItem from="1776756268521" duration="2803000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
