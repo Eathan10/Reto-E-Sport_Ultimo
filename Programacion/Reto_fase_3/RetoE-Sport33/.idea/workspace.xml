@@ -4,7 +4,6 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
     <list default="true" id="63f37a95-dde3-4e08-9ba5-25521c47a11c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Competicion/CompeticionGestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Competicion/CompeticionGestionController.java" afterDir="false" />
@@ -29,7 +28,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/retoesport33/competicion.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/retoesport33/jugadorVista.fxml" beforeDir="false" />
     </list>
-
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,24 +37,23 @@
     <persistenceIdMap>
       <entry key="_C:/Users/141GA07/Reto-E-Sport_Ultimo/Programacion/Reto_fase_3/RetoE-Sport33" value="3CexoZ9tnyRJO27OfiUbIcM3jEP" />
       <entry key="_C:/Users/141ga08/Desktop/Copia importante/Eathan10-Eathan10-Reto-E-Sport-2026/Programacion/Reto_fase_3/RetoE-Sport33" value="3CemnaK5ZFnC1AXHNvFalraeFoX" />
-      <entry key="_C:/Users/141ga08/Desktop/Repo_reto_definitivo/Programacion/Reto_fase_3/RetoE-Sport33" value="3Cf0HgVQOFqNgKvQF38YsIe7gxq" />
     </persistenceIdMap>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;UrkoLopezDeMunain11&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "UrkoLopezDeMunain11"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Eathan10/Reto-E-Sport_Ultimo.git&quot;,
-    &quot;accountId&quot;: &quot;aba53958-e74c-4908-9f7a-1e0b3e8f8d9c&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Eathan10/Reto-E-Sport_Ultimo.git",
+    "accountId": "aba53958-e74c-4908-9f7a-1e0b3e8f8d9c"
   }
-}</component>
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -80,7 +77,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "rama-eathan",
+    "git-widget-placeholder": "ramaUrko",
     "last_opened_file_path": "C:/Users/141GA07/Reto-E-Sport_Ultimo/Programacion/Reto_fase_3/RetoE-Sport33",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -110,13 +107,7 @@
       <updated>1776754579134</updated>
       <workItem from="1776754581033" duration="15000" />
       <workItem from="1776756268521" duration="2803000" />
-
       <workItem from="1776760013304" duration="9771000" />
-
-      <workItem from="1776760013304" duration="435000" />
-      <workItem from="1776761228703" duration="940000" />
-      <workItem from="1776764811774" duration="593000" />
-
     </task>
     <servers />
   </component>
