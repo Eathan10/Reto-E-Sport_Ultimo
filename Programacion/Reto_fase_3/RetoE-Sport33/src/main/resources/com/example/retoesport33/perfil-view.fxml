@@ -5,15 +5,26 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Vistas.VistaAdministradorUsuario.PerfilController">
-   <children>
-      <Button fx:id="btnadministrador" layoutX="86.0" layoutY="173.0" mnemonicParsing="false" onAction="#onAdiminstrador" prefHeight="54.0" prefWidth="158.0" text="ADMINISTRADOR">
-         <font>
-            <Font size="13.0" />
-         </font></Button>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F4F9F4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.VistaAdministradorUsuario.PerfilController">
+    <children>
+        <Label layoutX="172.0" layoutY="60.0" style="-fx-text-fill: #1B5E20; -fx-font-weight: bold;" text="INICIO DE SESIÓN" textAlignment="CENTER">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
 
-      <Button fx:id="btnusuario" layoutX="342.0" layoutY="173.0" mnemonicParsing="false" onAction="#onUsuario" prefHeight="54.0" prefWidth="157.0" text="USUARIO" />
-      <Label layoutX="245.0" layoutY="50.0" text="INICIO DE SESIÓN" textAlignment="CENTER" />
+        <Button fx:id="btnadministrador" layoutX="80.0" layoutY="180.0" mnemonicParsing="false" onAction="#onAdiminstrador" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #1B5E20; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 8; -fx-cursor: hand;" text="ADMINISTRADOR">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
 
-   </children>
+        <Button fx:id="btnusuario" layoutX="320.0" layoutY="180.0" mnemonicParsing="false" onAction="#onUsuario" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #2ECC71; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 8; -fx-cursor: hand;" text="USUARIO">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <Label layoutX="231.0" layoutY="110.0" style="-fx-text-fill: #7F8C8D; -fx-font-style: italic;" text="Selecciona tu perfil de acceso" />
+    </children>
 </AnchorPane>
