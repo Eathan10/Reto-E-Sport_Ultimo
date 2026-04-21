@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f37a95-dde3-4e08-9ba5-25521c47a11c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Competicion/CompeticionGestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Competicion/CompeticionGestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Jugador/AltaJugadorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Jugador/AltaJugadorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Jugador/JugadorGestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Jugador/JugadorGestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Jugador/ModificarJugadorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/Jugador/ModificarJugadorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaAdministradorUsuario/UsuarioView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaAdministradorUsuario/UsuarioView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaAdministradorUsuario/menuAdmistradorView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaAdministradorUsuario/menuAdmistradorView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaEquipo/AltaEquipoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaEquipo/AltaEquipoView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaEquipo/BajaEquipoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaEquipo/BajaEquipoView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaEquipo/EquipoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaEquipo/EquipoView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaEquipo/ModificacionEquipo2View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaEquipo/ModificacionEquipo2View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaEquipo/ModificarEquipoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaEquipo/ModificarEquipoView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaJornada/PartidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaJornada/PartidoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaVer/verEquiposView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaVer/verEquiposView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaVer/verJugadoresView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Vistas/VistaVer/verJugadoresView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/EquipoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/EquipoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/JugadorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/JugadorDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilidades/BaseDatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilidades/BaseDatos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/retoesport33/AltaEquipo-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/retoesport33/AltaEquipo-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/retoesport33/competicion.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/retoesport33/jugadorVista.fxml" beforeDir="false" />
-    </list>
+    <list default="true" id="63f37a95-dde3-4e08-9ba5-25521c47a11c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +84,7 @@
       <updated>1776754579134</updated>
       <workItem from="1776754581033" duration="15000" />
       <workItem from="1776756268521" duration="2803000" />
-      <workItem from="1776760013304" duration="9771000" />
+      <workItem from="1776760013304" duration="10469000" />
     </task>
     <servers />
   </component>
