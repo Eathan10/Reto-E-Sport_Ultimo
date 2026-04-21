@@ -25,7 +25,7 @@ public class EquipoDAO {
      */
     public static void insertarEquipo(Equipo equipo) {
         //para el equipo
-        String sqlEquipo = "INSERT INTO equipos (nombre_equipo, codigo_equipo, fecha_fundacion) VALUES (?, ?, ?)";
+        String sqlEquipo = "INSERT INTO equipos (nombre, cod_equipo, fecha_fundacion) VALUES (?, ?, ?)";
         //para el asignar el equipo al jugaodr
         String sqlJugador = "UPDATE jugadores SET nombre_equipo = ? WHERE nombre_jugador = ?";
         try {
@@ -65,7 +65,7 @@ public class EquipoDAO {
      * @param nombreEquipo El nombre del equipo que quieres borrar
      */
     public static void borrarEquipo(String nombreEquipo) {
-        String sql = "DELETE FROM equipos WHERE nombre_equipo = ?";
+        String sql = "DELETE FROM equipos WHERE nombre = ?";
 
         try {
             Connection conn = BaseDatos.getConnection();
@@ -92,7 +92,7 @@ public class EquipoDAO {
      * @return true si el equipo ya existe en la base de datos, false sino.
      */
     public static boolean comprobarExistencia(String nombreEquipo) {
-        String sql = "SELECT COUNT(*) FROM equipos WHERE nombre_equipo = ?";
+        String sql = "SELECT COUNT(*) FROM equipos WHERE nombre = ?";
 
         try {
             Connection conn = BaseDatos.getConnection();
@@ -122,7 +122,7 @@ public class EquipoDAO {
      * * @param equipo Objeto con los datos actualizados.
      */
     public static void actualizarEquipo(Equipo equipo) {
-        String sql = "UPDATE equipos SET codigo_equipo = ?, fecha_fundacion = ? WHERE nombre_equipo = ?";
+        String sql = "UPDATE equipos SET cod_equipo = ?, fecha_fundacion = ? WHERE nombre = ?";
 
         try {
             Connection conn = BaseDatos.getConnection();

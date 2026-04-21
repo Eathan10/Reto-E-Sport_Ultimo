@@ -27,10 +27,11 @@ public class BaseDatos {
     public static Connection getConnection() {
         try {
             if (conn == null || conn.isClosed()) {
+                System.out.println("La conexión era null o estaba cerrada. Reconectando...");
                 connect();
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.err.println("Error crítico en getConnection: " + e.getMessage());
         }
         return conn;
     }

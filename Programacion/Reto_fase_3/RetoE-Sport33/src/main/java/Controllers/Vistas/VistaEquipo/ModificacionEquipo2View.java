@@ -3,9 +3,13 @@ package Controllers.Vistas.VistaEquipo;
 import Controllers.EquipoController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.time.LocalDate;
 
 public class ModificacionEquipo2View {
@@ -67,9 +71,15 @@ public class ModificacionEquipo2View {
 
 
     @FXML
-    void onVolver(ActionEvent event) {
-        controller.show();
-        stage.close();
+    void onVolver(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/retoesport33/ModificarEquipo-view.fxml"));
+        Parent root = loader.load();
+
+        Stage stage = (Stage) btnCancelar.getScene().getWindow();
+
+        stage.setScene(new Scene(root));
+        stage.setTitle("Menu de Equipos");
+        stage.show();
 
     }
 

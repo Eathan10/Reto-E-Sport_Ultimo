@@ -42,6 +42,7 @@ import javafx.util.StringConverter;
 
 import java.io.IOException;
 
+import java.sql.Connection;
 import java.sql.SQLException;
 
 import java.time.LocalDate;
@@ -127,35 +128,31 @@ public class AltaJugadorController {
     @FXML
 
     private void initialize() {
+        try {
+            Connection conn = BaseDatos.getConnection();
+            if (conn != null) {
+                jugadorDAO = new JugadorDAO(conn);
+                cargarEquipos();
+            } else {
+                System.err.println("La conexión es NULL. Revisa la clase BaseDatos.");
+            }
+        } catch (Exception e) {
+            System.err.println("Error al inicializar DAO: " + e.getMessage());
+        }
 
-        jugadorDAO = new JugadorDAO(BaseDatos.getConnection());
 
         cbRol.setItems(FXCollections.observableArrayList("duelista", "iniciador", "centinela", "controlador"));
 
-        cargarEquipos();
-
-
-
         cbEquipo.setConverter(new StringConverter<Equipo>() {
-
             @Override
-
             public String toString(Equipo equipo) {
-
                 return (equipo != null) ? equipo.getNombreEquipo() : "";
-
             }
-
-
 
             @Override
-
             public Equipo fromString(String string) {
-
                 return null;
-
             }
-
         });
 
     }
@@ -164,16 +161,24 @@ public class AltaJugadorController {
 
     private void cargarEquipos() {
 
+        if (jugadorDAO == null) {
+            System.err.println("DEBUG: jugadorDAO es NULL, no se puede cargar nada.");
+            return;
+        }
         try {
+            List<Equipo> listaDB = jugadorDAO.obtenerEquiposDisp();
 
-            ObservableList<Equipo> equipos = FXCollections.observableArrayList(jugadorDAO.obtenerEquiposDisp());
+            System.out.println("DEBUG: Se han recuperado " + listaDB.size() + " equipos de la base de datos.");
 
+            if (listaDB.isEmpty()) {
+                System.out.println("DEBUG: La lista está vacía. ¿Hiciste COMMIT en SQL Developer?");
+            }
+
+            ObservableList<Equipo> equipos = FXCollections.observableArrayList(listaDB);
             cbEquipo.setItems(equipos);
 
         } catch (SQLException e) {
-
-            mostrarAlerta(Alert.AlertType.ERROR, "Error de Carga", "No se pudieron cargar los equipos: " + e.getMessage());
-
+            System.err.println("Error SQL al cargar equipos: " + e.getMessage());
         }
 
     }
@@ -251,15 +256,12 @@ public class AltaJugadorController {
         try {
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/retoesport33/JugadorGestion.fxml"));
-
             Parent root = loader.load();
 
-            Stage stage = (Stage) bVolver.getScene().getWindow();
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
             stage.setScene(new Scene(root));
-
             stage.setTitle("Gestión de Jugadores");
-
             stage.show();
 
         } catch(IOException e) {

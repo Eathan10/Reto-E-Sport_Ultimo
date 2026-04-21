@@ -52,24 +52,38 @@ public class CompeticionGestionController {
 
     @FXML
     private void initialize() {
-        competicionDAO = new CompeticionDAO(BaseDatos.getConnection());
+        try {
+            var conexion = BaseDatos.getConnection();
 
-        colCodigo.setCellValueFactory(new PropertyValueFactory<>("codComp"));
-        colNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
-        colEstado.setCellValueFactory(new PropertyValueFactory<>("estado"));
-        colPremio.setCellValueFactory(new PropertyValueFactory<>("premio"));
+            if (conexion != null) {
+                competicionDAO = new CompeticionDAO(conexion);
 
-        cargarDatos();
+                colCodigo.setCellValueFactory(new PropertyValueFactory<>("codComp"));
+                colNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+                colEstado.setCellValueFactory(new PropertyValueFactory<>("estado"));
+                colPremio.setCellValueFactory(new PropertyValueFactory<>("premio"));
+
+                cargarDatos();
+            } else {
+                System.err.println("No hay conexión a la base de datos.");
+            }
+
+        } catch (Exception e) {
+            System.err.println("Error en el inicio de Competiciones: " + e.getMessage());
+        }
     }
 
     private void cargarDatos() {
+        if (competicionDAO == null) return;
+
         try {
             ObservableList<Competicion> lista = FXCollections.observableArrayList(competicionDAO.listarTodos());
             tvCompeticiones.setItems(lista);
         } catch (SQLException e) {
-            e.printStackTrace();
-            }
+            System.err.println("Error al listar competiciones: " + e.getMessage());
         }
+    }
+
 
     @FXML
     void onAlta(ActionEvent event) {
@@ -91,7 +105,7 @@ public class CompeticionGestionController {
 
     @FXML
     void onVolver(ActionEvent event) {
-        cambiarVentana(event, "/com/example/retoesport33/panelPrincipal-view.fxml", "Panel Principal");
+        cambiarVentana(event, "/com/example/retoesport33/menuAdministrador-view.fxml", "Panel Principal");
     }
 
 

@@ -27,7 +27,7 @@ public class  menuAdmistradorView {
     private Button btnPartido;
 
     @FXML
-    private Button btnVolver;
+    private Button btnSalir;
 
     @FXML
     private Button btnVerJugadores;
@@ -35,13 +35,16 @@ public class  menuAdmistradorView {
     @FXML
     private Button btnVerEquipos;
 
+    @FXML
+    private Button btnJornada;
+
+
 
 
 
     @FXML
     void onEquipo(ActionEvent event) {
-        abrirVentana("/com/example/retoesport33/Equipo-view.fxml", "Gestion de Equipo")  ;
-
+        abrirVentana("/com/example/retoesport33/Equipo-view.fxml", "Gestion de Equipo");
     }
 
     @FXML
@@ -59,13 +62,13 @@ public class  menuAdmistradorView {
 
     @FXML
     void onJugador(ActionEvent event) {
-        abrirVentana("/com/example/retoesport33/jugadorVista.fxml", "Gestión de Jugadores")  ;
+        abrirVentana("/com/example/retoesport33/JugadorGestion.fxml", "Gestión de Jugadores");
     }
 
 
     @FXML
     void onCompeticion(ActionEvent event) {
-        abrirVentana("/com/example/retoesport33/GestionJornada.fxml", "Gestión de Jornadas")  ;
+        abrirVentana("/com/example/retoesport33/CompeticionGestion.fxml", "Gestión de Competiciones");
     }
 
     @FXML

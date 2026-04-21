@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="500.0" prefWidth="550.0" spacing="15" style="-fx-padding: 30; -fx-background-color: #F4F9F4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Vistas.VistaEquipo.BajaEquipoView">
+<VBox prefHeight="500.0" prefWidth="550.0" spacing="15" style="-fx-padding: 30; -fx-background-color: #F4F9F4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Vistas.VistaEquipo.AltaEquipoView">
     <children>
         <Label alignment="CENTER" prefWidth="490.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: #1B5E20;" text="ALTA DE EQUIPO" />
 

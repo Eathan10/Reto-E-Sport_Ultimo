@@ -28,4 +28,14 @@ module com.example.retoesport33 {
     exports Controllers.Vistas.Jugador;
     opens Controllers.Vistas.Jugador to javafx.fxml;
 
+    exports Controllers.Vistas.Competicion;
+    opens Controllers.Vistas.Competicion to javafx.fxml;
+
+    exports Controllers.Vistas.VistaJornada;
+    opens Controllers.Vistas.VistaJornada to javafx.fxml;
+
+
+
+
+
 }

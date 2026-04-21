@@ -41,7 +41,7 @@ public class verEquiposView {
     @FXML
     void onVolver(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/retoesport33/usuario-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/retoesport33/perfil-view.fxml"));
             Parent root = loader.load();
 
             Stage stage = (Stage) btnVolver.getScene().getWindow();

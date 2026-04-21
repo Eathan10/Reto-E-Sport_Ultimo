@@ -64,11 +64,14 @@ public class  ModificarJugadorController {
 
     @FXML
     private void initialize() {
-        jugadorDAO = new JugadorDAO(BaseDatos.getConnection());
-
+        try {
+            jugadorDAO = new JugadorDAO(BaseDatos.getConnection());
+            cargarLosEquipos();
+        } catch (Exception e) {
+            System.out.println("Error de conexión en Modificar: " + e.getMessage());
+        }
         cbRol.setItems(FXCollections.observableArrayList("duelista", "iniciador", "centinela", "controlador"));
         confirmarComboEquipos();
-        cargarLosEquipos();
     }
 
     @FXML
@@ -137,7 +140,9 @@ public class  ModificarJugadorController {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/retoesport33/JugadorGestion.fxml"));
             Parent root = loader.load();
-            Stage stage = (Stage) BtnVolver.getScene().getWindow();
+
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
             stage.setScene(new Scene(root));
             stage.setTitle("Gestión de Jugadores");
             stage.show();
