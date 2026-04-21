@@ -5,8 +5,8 @@
 
 -- Fallos
 
-insert into jugadores (cod_jugador, nombre, apellido, nacionalidad, fecha_nac, nickname, rol, sueldo, cod_equipo)
-values (99, 'juan', 'perez', 'española', to_date('2000-01-01', 'yyyy-mm-dd'), 'jp99', 'centinela', 1000, 1);
+insert into jugadores ( nombre, apellido, nacionalidad, fecha_nac, nickname, rol, sueldo, cod_equipo)
+values ('juan', 'perez', 'española', to_date('2000-01-01', 'yyyy-mm-dd'), 'jp99', 'centinela', 1000, 1);
 
 
 /*
@@ -54,8 +54,8 @@ https://docs.oracle.com/error-help/db/ora-04088/
 
 -- Exitos
 
-insert into jugadores (cod_jugador, nombre, apellido, nacionalidad, fecha_nac, nickname, rol, sueldo, cod_equipo)
-values (130, 'parii', 'garcia', 'Argentina', to_date('1995-05-15', 'yyyy-mm-dd'), 'parii_win', 'centinela', 1500, 1);
+insert into jugadores (nombre, apellido, nacionalidad, fecha_nac, nickname, rol, sueldo, cod_equipo)
+values ('parii', 'garcia', 'Argentina', to_date('1995-05-15', 'yyyy-mm-dd'), 'parii_win', 'centinela', 1500, 1);
 
 
 update jugadores 
@@ -69,8 +69,8 @@ from jugadores;
 
 -- Fallos
 
-insert into jugadores (cod_jugador, nombre, apellido, nacionalidad, fecha_nac, nickname, rol, sueldo, cod_equipo)
-values (99, 'juan', 'perez', 'española', to_date('2000-01-01', 'yyyy-mm-dd'), 'jp99', 'centinela', 1500, 1);
+insert into jugadores ( nombre, apellido, nacionalidad, fecha_nac, nickname, rol, sueldo, cod_equipo)
+values ('juan', 'perez', 'española', to_date('2000-01-01', 'yyyy-mm-dd'), 'jp99', 'centinela', 1500, 1);
 
 update jugadores
 set cod_equipo = 1
@@ -97,12 +97,20 @@ https://docs.oracle.com/error-help/db/ora-04088/
 */
 
 -- Exitos
-insert into jugadores (cod_jugador, nombre, apellido, nacionalidad, fecha_nac, nickname, rol, sueldo, cod_equipo)
-values (101, 'alana', 'torres', 'española', to_date('1995-05-15', 'yyyy-mm-dd'), 'alana', 'centinela', 1500, 3);
+insert into jugadores ( nombre, apellido, nacionalidad, fecha_nac, nickname, rol, sueldo, cod_equipo)
+values ( 'alana', 'torres', 'española', to_date('1995-05-15', 'yyyy-mm-dd'), 'alana', 'centinela', 1500, 3);
+
+select * 
+from jugadores 
+where nickname = 'alana';
 
 update jugadores
 set cod_equipo = 3
-where cod_jugador = 101;
+where cod_jugador = 10;
+
+select cod_jugador, nombre, apellido, cod_equipo 
+from jugadores 
+where cod_jugador = 10;
 
 -- Pruebas para el trigger tr_numero_jugadores_min
 
@@ -140,11 +148,19 @@ https://docs.oracle.com/error-help/db/ora-04088/
 
 -- Exitos
 
-insert into jugadores (cod_jugador, nombre, apellido, nacionalidad, fecha_nac, nickname, rol, sueldo, cod_equipo) 
-values (30, 'Carlos', 'López', 'España', sysdate, 'Carlitos', 'iniciador', 1500, 2);
+insert into jugadores ( nombre, apellido, nacionalidad, fecha_nac, nickname, rol, sueldo, cod_equipo) 
+values ('Carlos', 'López', 'España', sysdate, 'Carlitos', 'iniciador', 1500, 2);
+
+select * 
+from jugadores 
+where nickname = 'carlitos';
 
 update competiciones 
 set estado = 'cerrado' 
+where cod_comp = 1;
+
+select cod_comp, nombre, estado 
+from competiciones 
 where cod_comp = 1;
 
 
@@ -155,14 +171,14 @@ where cod_comp = 1;
 select *
 from partidos;
 
-insert into jornadas (num_jornada, fecha_inicio, cod_comp) 
-values (1, sysdate, 1);
+insert into jornadas (fecha_inicio, cod_comp) 
+values (sysdate, 1);
 
-insert into partidos (cod_partido, num_jornada, hora) 
-values (1, 1, current_timestamp);
+insert into partidos (num_jornada, hora) 
+values ( 1, current_timestamp);
 
-insert into equipos (cod_equipo, nombre, fecha_fundacion) 
-values (90, 'equipo bloqueado', sysdate);
+insert into equipos ( nombre, fecha_fundacion) 
+values ( 'equipo bloqueado', sysdate);
 
 delete from equipos 
 where cod_equipo = 80;
@@ -190,21 +206,31 @@ https://docs.oracle.com/error-help/db/ora-04088/
 
 -- Exitos
 
-delete from partidos;
 
+insert into equipos ( nombre, fecha_fundacion) 
+values ('equipo de prueba', sysdate);
 
-insert into equipos (cod_equipo, nombre, fecha_fundacion) 
-values (80, 'equipo de prueba', sysdate);
+select * 
+from equipos 
+where nombre = 'equipo de prueba';
 
-insert into jugadores (cod_jugador, nombre, apellido, nacionalidad, fecha_nac, nickname, rol, sueldo, cod_equipo) 
-values (800, 'prueba', 'exito', 'españa', sysdate, 'exito_player', 'centinela', 1500, 80);
+insert into jugadores ( nombre, apellido, nacionalidad, fecha_nac, nickname, rol, sueldo, cod_equipo) 
+values ('prueba', 'exito', 'españa', sysdate, 'exito_player', 'centinela', 1500, 80);
+
+select * 
+from jugadores 
+where nickname = 'exito_player';
 
 update jugadores 
 set cod_equipo = 2
 where cod_jugador = 20;
 
+select * from jugadores where cod_jugador = 20;
+
 delete from jugadores 
 where cod_jugador = 20;
+
+select * from jugadores where cod_jugador = 20;
 
 
 -- Pruebas para el trigger tr_equipos_pares
@@ -239,12 +265,17 @@ https://docs.oracle.com/error-help/db/ora-04088/
 
 -- Exitos
 
-insert into equipos (cod_equipo, nombre, fecha_fundacion) 
-values (20, 'equipo 2', sysdate);
+insert into equipos ( nombre, fecha_fundacion) 
+values ('equipo 2', sysdate);
 
+select * from equipos where nombre = 'equipo 2';
 
 update competiciones 
 set estado = 'Cerrado' 
+where cod_comp = 1;
+
+select cod_comp, nombre, estado 
+from competiciones 
 where cod_comp = 1;
 
 

@@ -73,3 +73,29 @@ values (2, 1, 13);
 insert into resultados (cod_partido, cod_equipo, resultado)
 values (2, 2, 8);
 
+
+
+-- Inserts para Perfiles
+
+
+insert into perfiles (nombre,password,tipo) values ('admin1','12345','administrador');
+
+insert into perfiles (nombre,password,tipo) values ('usuario1','12345','usuario');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
