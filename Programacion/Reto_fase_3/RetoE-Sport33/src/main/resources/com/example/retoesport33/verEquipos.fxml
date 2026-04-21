@@ -7,21 +7,24 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:controller="Controllers.Vistas.VistaVer.verEquiposView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Label layoutX="182.0" layoutY="22.0" text="Lista de Equipos">
-         <font>
-            <Font size="33.0" />
-         </font>
-      </Label>
-      <TableView fx:id="tablaEquipos" layoutY="71.0" prefHeight="286.0" prefWidth="600.0">
-        <columns>
-          <TableColumn fx:id="tbNombre" prefWidth="137.0" text="Nombre" />
-          <TableColumn fx:id="tbCodigo" prefWidth="114.0" text="Codigo" />
-            <TableColumn fx:id="tbFechaFundacion" prefWidth="183.0" text="Fecha Fundacion" />
-            <TableColumn fx:id="tbJugador" prefWidth="165.0" text="Jugador" />
-        </columns>
-      </TableView>
-      <Button fx:id="btnVolver" layoutX="274.0" layoutY="357.0" mnemonicParsing="false" onAction="#onVolver" text="Volver" />
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" style="-fx-background-color: #F4F9F4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="190.0" layoutY="25.0" style="-fx-text-fill: #1B5E20; -fx-font-weight: bold;" text="LISTA DE EQUIPOS">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tablaEquipos" layoutX="25.0" layoutY="90.0" prefHeight="280.0" prefWidth="600.0" style="-fx-border-color: #2ECC71; -fx-border-width: 2; -fx-border-radius: 5;">
+            <columns>
+                <TableColumn fx:id="tbNombre" prefWidth="137.0" text="Nombre" />
+                <TableColumn fx:id="tbCodigo" prefWidth="114.0" text="Código" />
+                <TableColumn fx:id="tbFechaFundacion" prefWidth="183.0" text="Fecha Fundación" />
+                <TableColumn fx:id="tbJugador" prefWidth="165.0" text="Jugador" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Button fx:id="btnVolver" layoutX="275.0" layoutY="390.0" mnemonicParsing="false" onAction="#onVolver" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #95A5A6; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand;" text="Volver" />
+    </children>
 </AnchorPane>

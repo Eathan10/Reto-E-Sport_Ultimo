@@ -5,16 +5,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane fx:controller="Controllers.Vistas.VistaAdministradorUsuario.UsuarioView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Label layoutX="198.0" layoutY="23.0" text="Menu Usuario">
-         <font>
-            <Font size="33.0" />
-         </font>
-      </Label>
-      <Button fx:id="btnVerEquipos" layoutX="95.0" layoutY="182.0" mnemonicParsing="false" onAction="#onVerEquipos" prefHeight="36.0" prefWidth="114.0" text="Ver Equipos" />
-      <Button fx:id="btnVerJugadores" layoutX="384.0" layoutY="182.0" mnemonicParsing="false" onAction="#onVerJugadores" prefHeight="36.0" prefWidth="114.0" text="Ver Jugadores" />
-      <Button fx:id="btnVolver" layoutX="275.0" layoutY="288.0" mnemonicParsing="false" onAction="#onVolver" text="Volver" />
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F4F9F4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="190.0" layoutY="40.0" style="-fx-text-fill: #1B5E20; -fx-font-weight: bold;" text="MENÚ USUARIO">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnVerEquipos" layoutX="100.0" layoutY="160.0" mnemonicParsing="false" onAction="#onVerEquipos" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: #2ECC71; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 15; -fx-border-color: #1B5E20; -fx-border-radius: 15; -fx-border-width: 2; -fx-cursor: hand;" text="VER EQUIPOS" />
+        <Button fx:id="btnVerJugadores" layoutX="340.0" layoutY="160.0" mnemonicParsing="false" onAction="#onVerJugadores" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: #2ECC71; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 15; -fx-border-color: #1B5E20; -fx-border-radius: 15; -fx-border-width: 2; -fx-cursor: hand;" text="VER JUGADORES" />
+        <Button fx:id="btnVolver" layoutX="250.0" layoutY="300.0" mnemonicParsing="false" onAction="#onVolver" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #95A5A6; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand;" text="Volver" />
+    </children>
 </AnchorPane>
+
