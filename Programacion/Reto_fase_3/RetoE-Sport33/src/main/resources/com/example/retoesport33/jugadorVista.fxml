@@ -9,11 +9,10 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<<<<<<< HEAD
-<VBox prefHeight="357.0" prefWidth="429.0" spacing="12" style="-fx-padding: 20;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="Controllers.Jugador.JugadorVistaController">
-=======
-<VBox prefHeight="357.0" prefWidth="429.0" spacing="12" style="-fx-padding: 20;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="Controllers.Vistas.Jugador.JugadorVistaController">
->>>>>>> ef850fbb1072ac398b7c203cde94538e6bda7aa6
+
+
+<VBox prefHeight="357.0" prefWidth="429.0" spacing="12" style="-fx-padding: 20;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="Controllers.Vistas.Jugador.JugadorGestionController">
+
 
     <Label alignment="CENTER" prefHeight="22.0" prefWidth="408.0" style="-fx-font-size: 15; -fx-font-weight: bold;" text="DATOS DEL JUGADOR" />
 
