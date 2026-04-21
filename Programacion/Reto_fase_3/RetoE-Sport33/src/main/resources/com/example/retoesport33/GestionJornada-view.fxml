@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="550.0" spacing="25" style="-fx-padding: 35; -fx-background-color: #F4F9F4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.VistaJornada.GestionJornadaView">
+<VBox prefHeight="400.0" prefWidth="550.0" spacing="25" style="-fx-padding: 35; -fx-background-color: #F4F9F4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Vistas.VistaJornada.GestionJornadaView">
     <children>
         <Label alignment="CENTER" prefWidth="480.0" style="-fx-font-size: 32; -fx-font-weight: bold; -fx-text-fill: #1B5E20;" text="GESTIÓN DE JORNADA" />
 
